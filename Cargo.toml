@@ -1,0 +1,12 @@
+[package]
+name = "uname-rs"
+version = "0.1.0"
+authors = ["Avery Murray <averylapine@gmail.com"]
+description = "No dependency, panic-less implementation of the POSIX utsname header and struct in Rust."
+keywords = ["uname", "hostname", "utsname", "POSIX"]
+repository = "https://github.com/caverym/uname-rs"
+license = "Apache-2.0"
+edition = "2018"
+
+[dependencies]
+# None!
