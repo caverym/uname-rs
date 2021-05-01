@@ -12,6 +12,8 @@ fn main() -> Result<()> {
 	let uts = Uname::new()?;
 
 	println!("{}", uts.sysname);
+
+	Ok(())
 }
 ```
 	
