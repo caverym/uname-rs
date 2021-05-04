@@ -1,6 +1,6 @@
 [package]
 name = "uname-rs"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Avery Murray <averylapine@gmail.com"]
 description = "No dependency, panic-less implementation of the POSIX utsname header and struct in Rust."
 keywords = ["uname", "hostname", "utsname", "POSIX"]
