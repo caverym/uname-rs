@@ -58,7 +58,9 @@ impl Uname {
 
 /// The actual function which converts C char arrays into Rust `String`.
 fn fromraw(s: &[c_char; 65usize]) -> Result<String> {
-    match String::from_utf8(s.iter().map(|x| *x as u8).collect()) {
+    let mut v = s.iter().map(|x| *x as u8).collect::<Vec<u8>>();
+    v.retain(|x| *x != 0);
+    match String::from_utf8(v) {
         Ok(res) => Ok(res),
         Err(e) => error!(e.to_string())?,
     }
